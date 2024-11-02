@@ -1,5 +1,6 @@
 keytool -list -v -keystore "C:\Users\doanh\.android\debug.keystore" -alias androiddebugkey -storepass android -keypass android
 keytool -list -v -keystore "C:\Users\binh1\.android\debug.keystore" -alias androiddebugkey -storepass android -keypass android
+keytool -genkeypair -v -keystore C:\Users\doanh\.android\debug.keystore -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000 -storepass android -keypass android
 
 ./keytool -genkey -v -keystore D:login-key.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias login-key
 dart pub outdated
